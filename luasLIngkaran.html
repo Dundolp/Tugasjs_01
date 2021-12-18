@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+      <label for="">Input Jari-jari</label>
+      <input type="tel" name="" id="jari" onchange="luasLingkaran()" />
+      <label for="">Luas lingkaran</label>
+      <input type="text" id="luas" />
+    </fieldset>
+
+    <script>
+      let jari_jari = document.getElementById("jari");
+      let phi = 3.14;
+      let hasil = document.getElementById("luas");
+      let penampung;
+
+      function luasLingkaran() {
+        penampung = jari_jari.value * phi;
+        hasil.value = penampung;
+      }
+    </script>
+  </body>
+</html>

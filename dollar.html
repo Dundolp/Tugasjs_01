@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <label for="">Dollar</label>
+      <input type="tel" id="dolar" onchange="Dollar()" />
+      <label for="">Rupiah</label>
+      <input type="tel" name="" id="rupiah" />
+    </div>
+
+    <script>
+      let dolar = document.getElementById("dolar");
+      let rupiah = document.getElementById("rupiah");
+      let penampung;
+
+      function Dollar() {
+        penampung = dolar.value * 14650;
+        rupiah.value = penampung;
+      }
+    </script>
+  </body>
+</html>
